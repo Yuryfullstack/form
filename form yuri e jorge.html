@@ -1,0 +1,127 @@
+<!doctype HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+        <body>
+            <form name="formulário" method="post" action="mailto:yurixxx37@gmail.com" enctype="text/plain">
+                <table>
+                    <tr>
+                        <td class="rigth">
+                            <label for="Nome">Nome:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="Nome" maxlength="40" placeholder="Digite seu nome " id="nome"> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rigth">
+                            <label for="Sobrenome">Sobrenome:</label>
+                       </td>
+                        <td>
+                        <input type="text" name="Sobrenome" maxlength="50" placeholder="Digite seu sobrenome" id="sobrenome">
+                       </td>
+                    </tr>
+                    <tr>
+                        <td class="rigth">
+                            <label for="email">e-mail:</label>
+                        </td>
+                         <td>
+                            <input type="email" name="e-mail" id="email" placeholder="Digite seu e-mail" id="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rigth">
+                            <label for="senha">Senha:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="Senha" maxlength="10" placeholder="Digite sua senha" id="senha">
+                        </td>
+                    <tr>
+                        <td class="rigth">
+                            <label for="Sexo">Sexo:</label>
+                        </td>
+                        <td>
+                            <input type="Radio" name="Sexo" value="F" id="mulher">Mulher
+                            <input type="Radio" name="Sexo" value="M" id="homem">Homem 
+                        </td>
+                    </tr>
+                        <td class="rigth">
+                            <label for="Data de nascimento">Data de nascimento:</label>
+                        </td>
+                        <td>
+                            <input type="date" name="Data de nascimento" id="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rigth">
+                            <label for="UF">UF:</label>
+                        </td>
+                        <td>
+                            <select name="UF" id="UF">
+                            <option value="Acre">AC</option>
+							<option value="Amazonas">AM</option>
+							<option value="Alagoas">AL</option>
+							<option value="Amapá">AP</option>
+							<option value="Bahia">BA</option>
+							<option value="Ceará">CE</option>
+							<option value="Distrito federal">DF</option>
+							<option value="Espírito Santo">ES</option>
+							<option value="Goiás">GO</option>
+							<option value="Maranhão">MA</option>
+							<option value="Mato Grosso">MG</option>
+							<option value="Mato Grosso do Sul">MS</option>
+							<option value="Minas Gerais">MG</option>
+							<option value="Pará">PA</option>
+							<option value="Paráiba">PB</option>
+							<option value="Pernambuco">PE</option>
+							<option value="Piau">PI</option>
+							<option value="Paraná">PR</option>
+							<option value="Rio de Janeiro">RJ</option>
+							<option value="Rio Grande do Norte">RN</option>
+							<option value="Rondônia">RO</option>
+							<option value="Roraima">RR</option>
+							<option value="Rio Grande do Sul">RS</option>
+							<option value="Santa Catarina">SC</option>
+							<option value="Sergipe">SE</option>
+							<option value="São Paulo" selected>SP</option>
+							<option value="Tocantins">TO</option>
+						</select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rigth">
+                            <label for="tel">Telefone:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="Telefone" id="Tel" placeholder="(999) 9999-9999">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rigth">
+                         <label for="Cursos">Cursos:</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="Cursos" id="Cursos"/>Recursos Humanos
+                            <input type="checkbox" name="Cursos" id="Cursos"/>Mecatrônica
+                            <input type="checkbox" name="Cursos" id="Cursos"/>Logística
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="rigth">
+                           <label for="comentário">Comentário:</label>
+                        </td>
+                        <td>
+                           <textarea name="comen" id="comen" cols="30" rows="10" placeholder="Deixe um comentário..."></textarea>
+                        </td>
+                    </tr>
+                        <td colspan="2" class="centralizado">
+                          <input type="submit" value="Enviar" onClick="Envio()" />
+						  <input type="reset" value="Limpar" onClick="window.document.getElementById('nome').focus();"/>
+                </table>
+
+            </form>
+        </body>
+</html>
